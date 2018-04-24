@@ -1,0 +1,23 @@
+EOS BUILD PROCESS
+================
+
+This script is intended to be used by all the nodes participating in the
+boot sequence.
+
+Very highlevel description of the stepts to be performed:
+
+1. Checkout and verify code
+2. Apply patches
+3. Build
+4. Spit out env file so we can test "sandboxed"
+
+Hope this will be helpfull.
+
+<3 Trinity (EOS BPs Group 3)
+
+FILES
+=====
+
+* script.sh
+
+starting script to start development, this script will probably be modularized.
