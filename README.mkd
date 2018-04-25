@@ -18,6 +18,25 @@ Hope this will be helpfull.
 FILES
 =====
 
-* script.sh
+## prepare.sh
 
-starting script to start development, this script will probably be modularized.
+prepares eos checkout and applies all the needed patches
+
+## build.sh
+
+builds eos quietly and logs to a build.log, informs the caller on state of build
+
+MAC TEST
+========
+
+To test prepare and build process use:
+
+```
+docker run -v $(pwd):/root/build -it eosio/builder
+```
+
+For info on necessary dependencies see:
+
+# https://github.com/EOSIO/eos/blob/master/Docker/builder/Dockerfile
+
+# https://github.com/EOSIO/eos/tree/master/Docker

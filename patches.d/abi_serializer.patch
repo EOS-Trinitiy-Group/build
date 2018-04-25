@@ -1,0 +1,25 @@
+diff --git a/libraries/chain/contracts/abi_serializer.cpp b/libraries/chain/contracts/abi_serializer.cpp
+index 16006096..dd6ef5c8 100644
+--- a/libraries/chain/contracts/abi_serializer.cpp
++++ b/libraries/chain/contracts/abi_serializer.cpp
+@@ -314,13 +314,15 @@ namespace eosio { namespace chain { namespace contracts {
+             }
+             */
+             uint32_t i = 0;
+-            for( const auto& field : st.fields ) {
+-               idump((field.type)(va[i])(i));
+-               if( va.size() > i )
++            if (va.size() > 0) {
++              for( const auto& field : st.fields ) {
++                idump((field.type)(va[i])(i));
++                if( va.size() > i )
+                   variant_to_binary(field.type, va[i], ds);
+-               else
++                else
+                   variant_to_binary(field.type, fc::variant(), ds);
+-               ++i;
++                ++i;
++              }
+             }
+          }
+       }
