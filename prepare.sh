@@ -8,6 +8,6 @@ ensure_context() {
 
 ensure_context
 
-#ensure_not_checked_out
-#checkout "dawn-v3.0.0"
+ensure_not_checked_out
+checkout "dawn-v3.0.0"
 apply_patches
