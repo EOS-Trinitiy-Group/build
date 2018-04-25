@@ -26,8 +26,8 @@ prepares eos checkout and applies all the needed patches
 
 builds eos quietly and logs to a build.log, informs the caller on state of build
 
-MAC TEST
-========
+MacOSX Test
+===========
 
 To test prepare and build process use:
 
@@ -35,7 +35,7 @@ To test prepare and build process use:
 docker run -v $(pwd):/root/build -it eosio/builder
 ```
 
-For info on necessary dependencies see:
+For info on installed dependencies see:
 
 https://github.com/EOSIO/eos/blob/master/Docker/builder/Dockerfile
 
