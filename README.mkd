@@ -37,6 +37,6 @@ docker run -v $(pwd):/root/build -it eosio/builder
 
 For info on necessary dependencies see:
 
-# https://github.com/EOSIO/eos/blob/master/Docker/builder/Dockerfile
+https://github.com/EOSIO/eos/blob/master/Docker/builder/Dockerfile
 
-# https://github.com/EOSIO/eos/tree/master/Docker
+https://github.com/EOSIO/eos/tree/master/Docker
